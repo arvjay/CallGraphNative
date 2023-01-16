@@ -51,9 +51,9 @@ export default function DefaultPage({navigation})  {
             <TextInput autoCorrect={false} onChangeText={(fileStructure) => 
             setValue({fileStructure : fileStructure, environment : value.environment, IPaddress : value.IPaddress, keywords : value.keywords})}>Enter the file or directory path here</TextInput>
             <TextInput autoCorrect={false} onChangeText={(environment) => 
-            setValue({fileStructure : value.fileStructure, environment : environment, IPaddress : value.IPaddress, keywords : value.keywords})}>Enter the python path here</TextInput>
+            setValue({fileStructure : value.fileStructure, environment : environment, IPaddress : value.IPaddress, keywords : value.keywords})}>Enter the python path here and your local IPv4 address below</TextInput>
             <TextInput autoCorrect={false} secureTextEntry={true} onChangeText={(IPaddress) => 
-            setValue({fileStructure : value.fileStructure, environment : value.environment, IPaddress: IPaddress, keywords : value.keywords})}>Enter your local IPv4 Address here</TextInput>
+            setValue({fileStructure : value.fileStructure, environment : value.environment, IPaddress: IPaddress, keywords : value.keywords})}></TextInput>
             <TextInput autoCorrect={false} onChangeText={(keywords) => 
             setValue({fileStructure : value.fileStructure, environment : value.environment, IPaddress : value.IPaddress, keywords : keywords})}>{"(Optional) Enter a comma separated list of keywords here"}</TextInput>
             <Button title="Confirm" onPress={post}/>
